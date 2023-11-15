@@ -55,7 +55,7 @@ let sections = document.querySelectorAll('section');
             let top = window.scrollY;
             let offset = sec.offsetTop - 150;
             let height = sec.offsetHeight;
-            let id = sec.getAttribute('id');
+            let id = sec.getAttribute('class');
             if(top >= offset && top < offset + height) {
                 navLinks.forEach(links => {
                     links.classList.remove('active');

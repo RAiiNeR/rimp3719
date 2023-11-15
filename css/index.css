@@ -22,8 +22,6 @@ header {
 	width: 100%;
 	height: 100px;
 	-webkit-background-size: cover;
-	background-color: #1b2e2b;
-	border-bottom: 3px solid rgb(107, 168, 107);
 	background-size: cover;
 	background-position: center center;
 	position: fixed;
@@ -124,11 +122,11 @@ section{
 
 
 /*섹션2*/
-section#about{
+section.about{
 	position:relative;
 }
 
-#about h2{
+.about h2{
 	font-size: 40px;
 	color: #fff;
 	font-weight: 600;
@@ -323,9 +321,9 @@ section#about{
 
 /*섹션3*/
 
-section#portfolio{
+section.portfolio{
     width: 100%;
-    height: 330vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -371,8 +369,16 @@ section#portfolio{
     margin-right: 0px;
 }
 
+.img-box{
+	overflow: hidden;
+}
+
+.img-box img{
+	transition: all 0.2s linear;
+}
+
 .box2:hover .img-box img{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .site-img-box{
@@ -404,153 +410,6 @@ section#portfolio{
     font-size: 16px;
     font-weight: 500;
 }
-
-
-.big-box3{
-    width: 1200px;
-	padding: 20px 0px;
-    position:relative;
-    margin-bottom: 200px;
-	margin-top: 880px;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
-.box3-inner{
-    padding: 945px 0px;
-    box-sizing: border-box;
-}
-
-.anibox{
-    width: 1200px;
-    top: 0px;
-    position: absolute;
-    display: none;
-}
-
-.big-box3 h2{
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 68px;
-    font-weight: bold;
-    color: rgb(72, 229, 140);
-}
-
-.product{
-    width: 320px;
-    height: 500px;
-    float: left;
-    margin-right: 120px;
-    margin-bottom: 90px;
-}
-
-.product:nth-of-type(3){
-    margin-right: 0px;
-}
-
-.product:nth-of-type(6){
-    margin-right: 0px;
-}
-
-.product:nth-of-type(8){
-    margin-right: 0px;
-}
-
-
-
-.content{
-    display: block;
-    width: 320px;
-    height: 400px;
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    cursor: pointer;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 16px;
-}
-
-.box3-text{
-    width: 320px;
-    text-align: center;
-    padding-bottom: 34px;
-}
-
-.box3-text h5{
-    font-size: 26px;
-    color: transparent;
-    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-}
-
-.box3-text p{
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-#modal-button {
-	background: rgb(58, 204, 121);
-	border: none;
-	color: #fff;
-	padding: 10px 30px;
-	font-size: 16px;
-    cursor: pointer;
-}
-
-
-.products-preview{
-    position: fixed;
-    top:0; left:0;
-    min-height: 100vh;
-    width: 100%;
-    background: rgba(0,0,0,.8);
-    display: none;
-    align-items: center;
-    justify-content: center;
-	z-index: 201;
-}
- 
-.products-preview .preview{
-    display: none;
-    padding:2rem;
-    text-align: center;
-    background: #fff;
-    position: relative;
-    width: 80rem;
-}
- 
-.products-preview .preview.active{
-    display: inline-block;
-}
- 
-.products-preview .preview img{
-    height: 40rem;
-}
- 
-.products-preview .preview .fa-times{
-    position: absolute;
-    top:1rem; right:1.5rem;
-    cursor: pointer;
-    color:#444;
-    font-size: 4rem;
-}
- 
-.products-preview .preview .fa-times:hover{
-    transform: rotate(90deg);
-}
- 
-.products-preview .preview h3{
-    color:#444;
-    padding:.5rem 0;
-    font-size: 1.8rem;
-}
- 
-.products-preview .preview p{
-    line-height: 1.5;
-    font-size: 1rem;
-    color:#777;
-}
-
 
 
 
