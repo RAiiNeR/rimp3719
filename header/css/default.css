@@ -1,14 +1,13 @@
 @charset "utf-8";
 
 @import url(comn.css);
-@import url(media.css);
 
 /******URL 임폴트 방식 Noto Sans KR - 100,300,400,500,700,900  ******/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;600;700;800;900');
 
 /* Default Style */
 *    	  		{margin:0; padding:0; -webkit-tap-highlight-color:transparent; box-sizing:border-box;}
-html, body		{width:100%; -webkit-font-smoothing:antialiased; font:500 20px/24px "Noto Sans KR", sans-serif; color:#6a6a6a; background:#ccc; }
+html, body		{width:100%; -webkit-font-smoothing:antialiased; font:500 20px/24px "Noto Sans KR", sans-serif; color:#6a6a6a;}
 
 /*button 추가*/
 button			{border:none; cursor:pointer; background:transparent;}
